@@ -3,6 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS-Grid</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .container{
+      display: grid;
+      /*grid-template: filas / columnas*/
+      grid-template: 300px 100px 100px / 50% 200px 100px;
+    }
+    .item{
+      border: 1px solid lightcoral;
+    }
+  </style>
 </head>
 <body>
   <section class="container">
