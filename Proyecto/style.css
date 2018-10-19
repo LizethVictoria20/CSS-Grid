@@ -2,12 +2,18 @@
   margin: 0;
   font-family: Arial;
 }
+.post-list{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  grid-gap: 28px;
 
+}
 .post{
   cursor: pointer;
   position: relative;
-  width: 200px;
   display: block;
+
 }
 .post-image{
   margin: 0;
@@ -41,4 +47,19 @@
   font-weight: bold;
   text-align: center;
   display: inline-block;
+}
+
+@media screen and (max-width:768px){ /*Media query - Para adaptar a diferentes dispositivos*/
+  .post-list{
+    grid-gap: 3px;
+  }
+}
+
+.container{
+  grid-template-areas: "header header" "post post" "footer footer"
+}
+
+.header{
+  grid-area:header;
+  background-color: lightcoral;
 }
