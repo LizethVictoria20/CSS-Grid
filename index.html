@@ -25,27 +25,32 @@
       padding: 10px;
 
     }
-    .item:nth-of-type(4){ /*Tomar un item en especifico*/
-      background: lightpink;
-      overflow: auto; /*Pone un scroll*/
-      display: grid;
-      grid-template: 50px 50px 50px / 200px 200px 200px;
-    }
+
     .item .item{
-      background: lightcyan
+      background: #9F81F7;
+
     }
     .header{
       /*Solo se le pone a los items de un container*/
       grid-area: header;
+      background-color: #81BEF7;
+      border-radius: 20px;
     }
     .left{
       grid-area: left;
+      background-color: #8181F7;
+      border-radius: 20px;
+
     }
     .contenido{
       grid-area: contenido;
+      background-color: #BE81F7;
+      border-radius: 20px;
     }
     .footer{
       grid-area: footer;
+      background-color: #81F7BE;
+      border-radius: 20px;
     }
   </style>
 </head>
