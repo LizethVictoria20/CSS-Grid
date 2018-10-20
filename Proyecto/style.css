@@ -54,12 +54,3 @@
     grid-gap: 3px;
   }
 }
-
-.container{
-  grid-template-areas: "header header" "post post" "footer footer"
-}
-
-.header{
-  grid-area:header;
-  background-color: lightcoral;
-}
